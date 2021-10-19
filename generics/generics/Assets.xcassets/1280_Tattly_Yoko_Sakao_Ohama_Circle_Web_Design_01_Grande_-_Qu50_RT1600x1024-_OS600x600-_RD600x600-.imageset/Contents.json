@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "1280_Tattly_Yoko_Sakao_Ohama_Circle_Web_Design_01_Grande_-_Qu50_RT1600x1024-_OS600x600-_RD600x600-.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
