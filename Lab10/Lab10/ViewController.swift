@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Lab10
 //
-//  Created by meme f on 12/03/1443 AH.
+//  Created by maram faqih on 12/03/1443 AH.
 //
 
 import UIKit
@@ -11,9 +11,9 @@ class ViewController: UIViewController {
     var numOnLable1=0.0
     var numOnLable2=0.0
     var opretion=0
-    var tempNo = ""
+   
     
-    var peforOperation=true
+    var numSet=true
     
     
     @IBOutlet var buttonsCircle: [UIButton]!
@@ -28,12 +28,14 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         bAc.layer.cornerRadius = 0.3 *  bAc.bounds.size.height
         bAc.layer.masksToBounds = true
+        
          
         for i in buttonsCircle{
             
         
         i.layer.cornerRadius = 0.5 *  i.bounds.size.height
         i.layer.masksToBounds = true
+      
         }
         
         
@@ -43,18 +45,20 @@ class ViewController: UIViewController {
     @IBAction func numbersAction(_ sender: UIButton) {
       
        
-        if peforOperation == true
+        if numSet == true
         {
            
           
-            numOnLable2=numOnLable1
+             //numOnLable2 = numOnLable1
             labelView.text = String(sender.tag)
             numOnLable1 = Double( labelView.text!)!
-            peforOperation = false
+            numSet = false
         }
         else
             {
-           
+                if(labelView.text=="0"){
+                    labelView.text=""
+                }
                 labelView.text=labelView.text!+String(sender.tag)
                 numOnLable1 = Double( labelView.text!)!
                 //peforOperation = true
@@ -75,7 +79,7 @@ class ViewController: UIViewController {
     
     @IBAction func oprFunc(_ sender: UIButton) {
         if (labelView.text != "" && sender.tag != 11 && sender.tag != 16){
-            
+            numOnLable2 = Double(labelView.text!)!
            if sender.tag == 12{
                
            labelView.text = "÷"
@@ -96,58 +100,67 @@ class ViewController: UIViewController {
                //opretion = 15
            }
             opretion = sender.tag
-            peforOperation = true
+            numSet = true
             
                }
        else if sender.tag == 16{
-                
+        
                    if opretion == 12{
                        let result = String(numOnLable2/numOnLable1)
                        if checkDouble(num: result) == true{
                            labelView.text = String(result)
+                          
+                           
                            
                        }else{
                           
                            labelView.text = String(Int(numOnLable2/numOnLable1))
+                   
                            
                        }
                    }else if opretion == 13{
                        let result = String(numOnLable2*numOnLable1)
                        if checkDouble(num: result) == true{
                            labelView.text = String(result)
+                
                            
                        }else{
                           
                            labelView.text = String(Int(numOnLable2*numOnLable1))
-                           
+                          
                        }
                        
                    }else if opretion == 14{
                        let result = String(numOnLable2-numOnLable1)
                        if checkDouble(num: result) == true{
                            labelView.text = String(result)
+                       
                            
                        }else{
                           
                            labelView.text = String(Int(numOnLable2-numOnLable1))
+                         
                            
                        }
                    }else if opretion == 15{
                        let result = String(numOnLable2+numOnLable1)
                        if checkDouble(num: result) == true{
                            labelView.text = String(result)
+                       
                            
                        }else{
                           
                            labelView.text = String(Int(numOnLable2+numOnLable1))
                            
+                           
                        }
                        
                    }
+         
            
        }
        else if sender.tag==11{
-                   labelView.text! = ""
+                   labelView.text! = "0"
                     numOnLable1=0
                     numOnLable2=0
                    opretion=0
