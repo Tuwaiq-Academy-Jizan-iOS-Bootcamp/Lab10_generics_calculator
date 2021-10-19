@@ -68,7 +68,7 @@ class ViewController: UIViewController {
         if lable.text != "" && sender.tag != 11 && sender.tag != 16 {
         previousNumber = Double(lable.text!)!
 
-        if sender.tag == 12 { //Divide
+     /*   if sender.tag == 12 { //Divide
 
         lable.text = "/";
 
@@ -90,7 +90,7 @@ class ViewController: UIViewController {
 
         lable.text = "+";
 
-        }
+        }*/
        
             
         operation = sender.tag
