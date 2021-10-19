@@ -42,6 +42,9 @@
                                             <fontDescription key="titleFontDescription" type="italicSystem" pointSize="61"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonDicmaa:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PE1-DQ-Q9K"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lrt-Ju-OZ2">
                                         <rect key="frame" x="330" y="544" width="84" height="98"/>
@@ -289,7 +292,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1880" y="-463"/>
+            <point key="canvasLocation" x="-2675" y="-694"/>
         </scene>
     </scenes>
     <resources>
