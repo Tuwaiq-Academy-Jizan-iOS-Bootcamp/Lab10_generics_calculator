@@ -15,85 +15,26 @@ class ViewController: UIViewController {
     
     var peforOperation=true
     
+    
+    @IBOutlet var buttonsCircle: [UIButton]!
+    
     @IBOutlet weak var labelView: UILabel!
    
-    @IBOutlet weak var num0: UIButton!
 
-    @IBOutlet weak var bcoma: UIButton!
-    @IBOutlet weak var num3: UIButton!
-    @IBOutlet weak var num2: UIButton!
-    @IBOutlet weak var num1: UIButton!
-    @IBOutlet weak var num6: UIButton!
-    @IBOutlet weak var num5: UIButton!
-    @IBOutlet weak var num4: UIButton!
-    @IBOutlet weak var num9: UIButton!
-    @IBOutlet weak var num8: UIButton!
-    @IBOutlet weak var num7: UIButton!
-    
-    @IBOutlet weak var bEequal: UIButton!
-    
-    @IBOutlet weak var bAdd: UIButton!
-    @IBOutlet weak var bSub: UIButton!
-    @IBOutlet weak var bMultip: UIButton!
     @IBOutlet weak var bAc: UIButton!
-    @IBOutlet weak var bDivide: UIButton!
    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         bAc.layer.cornerRadius = 0.3 *  bAc.bounds.size.height
         bAc.layer.masksToBounds = true
+         
+        for i in buttonsCircle{
+            
         
-        num0.layer.cornerRadius = 0.5 *  num0.bounds.size.height
-        num0.layer.masksToBounds = true
-        
-        num1.layer.cornerRadius = 0.5 *  num1.bounds.size.width
-        num1.layer.masksToBounds = true
-        
-        num2.layer.cornerRadius = 0.5 *  num2.bounds.size.width
-        num2.layer.masksToBounds = true
-        
-        num3.layer.cornerRadius = 0.5 *  num3.bounds.size.width
-        num3.layer.masksToBounds = true
-        
-        num4.layer.cornerRadius = 0.5 *  num4.bounds.size.width
-        num4.layer.masksToBounds = true
-        
-        num5.layer.cornerRadius = 0.5 *  num5.bounds.size.width
-        num5.layer.masksToBounds = true
-        
-        num5.layer.cornerRadius = 0.5 *  num5.bounds.size.width
-        num5.layer.masksToBounds = true
-        
-        num6.layer.cornerRadius = 0.5 *  num6.bounds.size.width
-        num6.layer.masksToBounds = true
-        
-        num7.layer.cornerRadius = 0.5 *  num7.bounds.size.width
-        num7.layer.masksToBounds = true
-        
-        num8.layer.cornerRadius = 0.5 *  num8.bounds.size.width
-        num8.layer.masksToBounds = true
-        
-        num9.layer.cornerRadius = 0.5 *  num9.bounds.size.width
-        num9.layer.masksToBounds = true
-        
-        bEequal.layer.cornerRadius = 0.5 *  bEequal.bounds.size.width
-        bEequal.layer.masksToBounds = true
-        
-        bAdd.layer.cornerRadius = 0.5 *  bAdd.bounds.size.width
-        bAdd.layer.masksToBounds = true
-        
-        bSub.layer.cornerRadius = 0.5 *  bSub.bounds.size.width
-        bSub.layer.masksToBounds = true
-        
-        bMultip.layer.cornerRadius = 0.5 *  bMultip.bounds.size.width
-        bMultip.layer.masksToBounds = true
-        
-        bDivide.layer.cornerRadius = 0.5 *  bDivide.bounds.size.width
-        bDivide.layer.masksToBounds = true
-        
-        bcoma.layer.cornerRadius = 0.5 *  bcoma.bounds.size.width
-        bcoma.layer.masksToBounds = true
+        i.layer.cornerRadius = 0.5 *  i.bounds.size.height
+        i.layer.masksToBounds = true
+        }
         
         
 }
