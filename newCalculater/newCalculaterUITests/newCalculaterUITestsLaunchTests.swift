@@ -1,13 +1,13 @@
 //
-//  calculatorUITestsLaunchTests.swift
-//  calculatorUITests
+//  newCalculaterUITestsLaunchTests.swift
+//  newCalculaterUITests
 //
-//  Created by Arwa Alattas on 12/03/1443 AH.
+//  Created by Arwa Alattas on 13/03/1443 AH.
 //
 
 import XCTest
 
-class calculatorUITestsLaunchTests: XCTestCase {
+class newCalculaterUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

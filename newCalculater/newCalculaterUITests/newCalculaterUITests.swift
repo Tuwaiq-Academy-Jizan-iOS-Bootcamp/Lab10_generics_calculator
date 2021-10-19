@@ -1,13 +1,13 @@
 //
-//  calculatorUITests.swift
-//  calculatorUITests
+//  newCalculaterUITests.swift
+//  newCalculaterUITests
 //
-//  Created by Arwa Alattas on 12/03/1443 AH.
+//  Created by Arwa Alattas on 13/03/1443 AH.
 //
 
 import XCTest
 
-class calculatorUITests: XCTestCase {
+class newCalculaterUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

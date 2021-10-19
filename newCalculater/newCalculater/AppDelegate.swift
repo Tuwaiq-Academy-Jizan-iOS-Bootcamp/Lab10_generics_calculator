@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  calculator
+//  newCalculater
 //
-//  Created by Arwa Alattas on 12/03/1443 AH.
+//  Created by Arwa Alattas on 13/03/1443 AH.
 //
 
 import UIKit
