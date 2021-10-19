@@ -30,6 +30,10 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func comaFunc(_ sender: UIButton) {
+    label.text = label.text! + "."
+    }
+    
     @IBAction func UIButton(_ sender: UIButton) {
     if label.text != "" && sender.tag != 11 && sender.tag != 16
         {
@@ -83,6 +87,7 @@ class ViewController: UIViewController {
             numberOnview = 0;
         }
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
