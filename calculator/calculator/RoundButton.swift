@@ -13,12 +13,14 @@ class RoundButton: UIButton {
         didSet{
             if roundButton {
                 layer.cornerRadius = frame.height / 2
+                layer.masksToBounds = true
             }
         }
     }
     override func prepareForInterfaceBuilder() {
         if roundButton {
-            layer.cornerRadius = frame.height / 2
+            layer.cornerRadius = frame.width / 2
+            layer.masksToBounds = true
         }
     }
     

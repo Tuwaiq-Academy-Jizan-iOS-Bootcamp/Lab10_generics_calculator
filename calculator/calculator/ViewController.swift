@@ -15,18 +15,6 @@ class ViewController: UIViewController {
     var opration = 0
     @IBOutlet weak var lable: UILabel!
 
-  /* var newOperation = true
-        func AddNumerToInput(number:String){
-                var textNumber = String(
-                    lable.text!)
-                if newOperation {
-                    textNumber = ""
-                    newOperation = false
-                }
-                textNumber = textNumber + number
-                lable.text = textNumber
-        }*/
-   
     
     @IBAction func dotBU(_ sender: Any) {
         if performingMath == true{
@@ -116,7 +104,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
     }
 
     
