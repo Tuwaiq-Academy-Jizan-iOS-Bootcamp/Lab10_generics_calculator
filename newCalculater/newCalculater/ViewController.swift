@@ -11,8 +11,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var lable: UILabel!
    //variable i need for the logic
-    var FirstNumber = 0.0
-    var scandNumber = 0.0
+    var FirstNumber = 0
+    var scandNumber = 0
     var mathOperation = ""
     var resetLable = true
     
@@ -25,20 +25,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction func dotPressed(_ sender: UIButton) {
-       // lable.text = lable.text! + "."
-        if resetLable == true{
-        lable.text = String(".")
-        FirstNumber = Double(lable.text!)!
-        resetLable = false
-        
-    }
-    else{
-        
-        lable.text = lable.text! + String(".")
-        FirstNumber = Double(lable.text!)!
+       //lable.text = lable.text! + "."
     }
     
-    }
     @IBAction func buttons(_ sender: UIButton) {
         if resetLable{
         lable.text = ""
@@ -51,19 +40,19 @@ class ViewController: UIViewController {
     @IBAction func mathBu(_ sender: UIButton) {
         switch sender.tag {
         case 11 :
-            FirstNumber = Double(lable.text!)!
+            FirstNumber = Int(lable.text!)!
             mathOperation = "/"
             resetLable = true
         case 12 :
-            FirstNumber = Double(lable.text!)!
+            FirstNumber = Int(lable.text!)!
             mathOperation = "*"
             resetLable = true
         case 13 :
-            FirstNumber = Double(lable.text!)!
+            FirstNumber = Int(lable.text!)!
             mathOperation = "-"
             resetLable = true
         case 14 :
-            FirstNumber = Double(lable.text!)!
+            FirstNumber = Int(lable.text!)!
             mathOperation = "+"
             resetLable = true
         
@@ -78,7 +67,7 @@ class ViewController: UIViewController {
    
     
     @IBAction func equalBu(_ sender: Any) {
-       scandNumber = Double(lable.text!)!
+       scandNumber = Int(lable.text!)!
         if mathOperation == "/"{
             lable.text = String(divideBy(number1: FirstNumber, number2: scandNumber))
         } else   if mathOperation == "*"{
@@ -101,26 +90,26 @@ class ViewController: UIViewController {
         
     }
     
-    func  divideBy (number1 :Double , number2: Double) -> Double{
+    func  divideBy (number1 :Int , number2: Int) ->Int{
         
         return number1 / number2
     }
     
     
     
-    func multiplay (number1 :Double , number2: Double) -> Double{
+    func multiplay (number1 :Int, number2: Int) -> Int{
         
         return number1 * number2
     }
     
     
-    func  subtract (number1 : Double , number2:Double) -> Double{
+    func  subtract (number1 : Int , number2:Int) -> Int{
         
         return number1 - number2
     }
     
     
-    func  sum (number1 : Double , number2:Double) -> Double{
+    func  sum (number1 :Int , number2:Int) -> Int{
         
         return number1 + number2
     }
