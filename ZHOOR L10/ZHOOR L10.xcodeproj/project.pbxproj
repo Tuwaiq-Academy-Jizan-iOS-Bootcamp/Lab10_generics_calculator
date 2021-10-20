@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F8C6A9A3271F31D3002BB36A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C6A9A2271F31D3002BB36A /* AppDelegate.swift */; };
+		F8C6A9A5271F31D3002BB36A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C6A9A4271F31D3002BB36A /* SceneDelegate.swift */; };
+		F8C6A9A7271F31D3002BB36A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C6A9A6271F31D3002BB36A /* ViewController.swift */; };
+		F8C6A9AA271F31D3002BB36A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8C6A9A8271F31D3002BB36A /* Main.storyboard */; };
+		F8C6A9AC271F31D4002BB36A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8C6A9AB271F31D4002BB36A /* Assets.xcassets */; };
+		F8C6A9AF271F31D4002BB36A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8C6A9AD271F31D4002BB36A /* LaunchScreen.storyboard */; };
+		F8C6A9BA271F31D5002BB36A /* ZHOOR_L10Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C6A9B9271F31D5002BB36A /* ZHOOR_L10Tests.swift */; };
+		F8C6A9C4271F31D5002BB36A /* ZHOOR_L10UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C6A9C3271F31D5002BB36A /* ZHOOR_L10UITests.swift */; };
+		F8C6A9C6271F31D5002BB36A /* ZHOOR_L10UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C6A9C5271F31D5002BB36A /* ZHOOR_L10UITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F8C6A9B6271F31D5002BB36A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8C6A997271F31D3002BB36A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8C6A99E271F31D3002BB36A;
+			remoteInfo = "ZHOOR L10";
+		};
+		F8C6A9C0271F31D5002BB36A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8C6A997271F31D3002BB36A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8C6A99E271F31D3002BB36A;
+			remoteInfo = "ZHOOR L10";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F8C6A99F271F31D3002BB36A /* ZHOOR L10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ZHOOR L10.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8C6A9A2271F31D3002BB36A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F8C6A9A4271F31D3002BB36A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F8C6A9A6271F31D3002BB36A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F8C6A9A9271F31D3002BB36A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F8C6A9AB271F31D4002BB36A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8C6A9AE271F31D4002BB36A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F8C6A9B0271F31D4002BB36A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8C6A9B5271F31D5002BB36A /* ZHOOR L10Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ZHOOR L10Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8C6A9B9271F31D5002BB36A /* ZHOOR_L10Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHOOR_L10Tests.swift; sourceTree = "<group>"; };
+		F8C6A9BF271F31D5002BB36A /* ZHOOR L10UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ZHOOR L10UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8C6A9C3271F31D5002BB36A /* ZHOOR_L10UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHOOR_L10UITests.swift; sourceTree = "<group>"; };
+		F8C6A9C5271F31D5002BB36A /* ZHOOR_L10UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHOOR_L10UITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8C6A99C271F31D3002BB36A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8C6A9B2271F31D5002BB36A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8C6A9BC271F31D5002BB36A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F8C6A996271F31D3002BB36A = {
+			isa = PBXGroup;
+			children = (
+				F8C6A9A1271F31D3002BB36A /* ZHOOR L10 */,
+				F8C6A9B8271F31D5002BB36A /* ZHOOR L10Tests */,
+				F8C6A9C2271F31D5002BB36A /* ZHOOR L10UITests */,
+				F8C6A9A0271F31D3002BB36A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8C6A9A0271F31D3002BB36A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8C6A99F271F31D3002BB36A /* ZHOOR L10.app */,
+				F8C6A9B5271F31D5002BB36A /* ZHOOR L10Tests.xctest */,
+				F8C6A9BF271F31D5002BB36A /* ZHOOR L10UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8C6A9A1271F31D3002BB36A /* ZHOOR L10 */ = {
+			isa = PBXGroup;
+			children = (
+				F8C6A9A2271F31D3002BB36A /* AppDelegate.swift */,
+				F8C6A9A4271F31D3002BB36A /* SceneDelegate.swift */,
+				F8C6A9A6271F31D3002BB36A /* ViewController.swift */,
+				F8C6A9A8271F31D3002BB36A /* Main.storyboard */,
+				F8C6A9AB271F31D4002BB36A /* Assets.xcassets */,
+				F8C6A9AD271F31D4002BB36A /* LaunchScreen.storyboard */,
+				F8C6A9B0271F31D4002BB36A /* Info.plist */,
+			);
+			path = "ZHOOR L10";
+			sourceTree = "<group>";
+		};
+		F8C6A9B8271F31D5002BB36A /* ZHOOR L10Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F8C6A9B9271F31D5002BB36A /* ZHOOR_L10Tests.swift */,
+			);
+			path = "ZHOOR L10Tests";
+			sourceTree = "<group>";
+		};
+		F8C6A9C2271F31D5002BB36A /* ZHOOR L10UITests */ = {
+			isa = PBXGroup;
+			children = (
+				F8C6A9C3271F31D5002BB36A /* ZHOOR_L10UITests.swift */,
+				F8C6A9C5271F31D5002BB36A /* ZHOOR_L10UITestsLaunchTests.swift */,
+			);
+			path = "ZHOOR L10UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8C6A99E271F31D3002BB36A /* ZHOOR L10 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8C6A9C9271F31D5002BB36A /* Build configuration list for PBXNativeTarget "ZHOOR L10" */;
+			buildPhases = (
+				F8C6A99B271F31D3002BB36A /* Sources */,
+				F8C6A99C271F31D3002BB36A /* Frameworks */,
+				F8C6A99D271F31D3002BB36A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ZHOOR L10";
+			productName = "ZHOOR L10";
+			productReference = F8C6A99F271F31D3002BB36A /* ZHOOR L10.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F8C6A9B4271F31D5002BB36A /* ZHOOR L10Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8C6A9CC271F31D5002BB36A /* Build configuration list for PBXNativeTarget "ZHOOR L10Tests" */;
+			buildPhases = (
+				F8C6A9B1271F31D5002BB36A /* Sources */,
+				F8C6A9B2271F31D5002BB36A /* Frameworks */,
+				F8C6A9B3271F31D5002BB36A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8C6A9B7271F31D5002BB36A /* PBXTargetDependency */,
+			);
+			name = "ZHOOR L10Tests";
+			productName = "ZHOOR L10Tests";
+			productReference = F8C6A9B5271F31D5002BB36A /* ZHOOR L10Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F8C6A9BE271F31D5002BB36A /* ZHOOR L10UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8C6A9CF271F31D5002BB36A /* Build configuration list for PBXNativeTarget "ZHOOR L10UITests" */;
+			buildPhases = (
+				F8C6A9BB271F31D5002BB36A /* Sources */,
+				F8C6A9BC271F31D5002BB36A /* Frameworks */,
+				F8C6A9BD271F31D5002BB36A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8C6A9C1271F31D5002BB36A /* PBXTargetDependency */,
+			);
+			name = "ZHOOR L10UITests";
+			productName = "ZHOOR L10UITests";
+			productReference = F8C6A9BF271F31D5002BB36A /* ZHOOR L10UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8C6A997271F31D3002BB36A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					F8C6A99E271F31D3002BB36A = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					F8C6A9B4271F31D5002BB36A = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = F8C6A99E271F31D3002BB36A;
+					};
+					F8C6A9BE271F31D5002BB36A = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = F8C6A99E271F31D3002BB36A;
+					};
+				};
+			};
+			buildConfigurationList = F8C6A99A271F31D3002BB36A /* Build configuration list for PBXProject "ZHOOR L10" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8C6A996271F31D3002BB36A;
+			productRefGroup = F8C6A9A0271F31D3002BB36A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8C6A99E271F31D3002BB36A /* ZHOOR L10 */,
+				F8C6A9B4271F31D5002BB36A /* ZHOOR L10Tests */,
+				F8C6A9BE271F31D5002BB36A /* ZHOOR L10UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8C6A99D271F31D3002BB36A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8C6A9AF271F31D4002BB36A /* LaunchScreen.storyboard in Resources */,
+				F8C6A9AC271F31D4002BB36A /* Assets.xcassets in Resources */,
+				F8C6A9AA271F31D3002BB36A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8C6A9B3271F31D5002BB36A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8C6A9BD271F31D5002BB36A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8C6A99B271F31D3002BB36A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8C6A9A7271F31D3002BB36A /* ViewController.swift in Sources */,
+				F8C6A9A3271F31D3002BB36A /* AppDelegate.swift in Sources */,
+				F8C6A9A5271F31D3002BB36A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8C6A9B1271F31D5002BB36A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8C6A9BA271F31D5002BB36A /* ZHOOR_L10Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8C6A9BB271F31D5002BB36A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8C6A9C4271F31D5002BB36A /* ZHOOR_L10UITests.swift in Sources */,
+				F8C6A9C6271F31D5002BB36A /* ZHOOR_L10UITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F8C6A9B7271F31D5002BB36A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8C6A99E271F31D3002BB36A /* ZHOOR L10 */;
+			targetProxy = F8C6A9B6271F31D5002BB36A /* PBXContainerItemProxy */;
+		};
+		F8C6A9C1271F31D5002BB36A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8C6A99E271F31D3002BB36A /* ZHOOR L10 */;
+			targetProxy = F8C6A9C0271F31D5002BB36A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F8C6A9A8271F31D3002BB36A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8C6A9A9271F31D3002BB36A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F8C6A9AD271F31D4002BB36A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8C6A9AE271F31D4002BB36A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8C6A9C7271F31D5002BB36A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F8C6A9C8271F31D5002BB36A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8C6A9CA271F31D5002BB36A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ZHOOR L10/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Zhoor.com.ZHOOR-L10";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F8C6A9CB271F31D5002BB36A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ZHOOR L10/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Zhoor.com.ZHOOR-L10";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F8C6A9CD271F31D5002BB36A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Zhoor.com.ZHOOR-L10Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZHOOR L10.app/ZHOOR L10";
+			};
+			name = Debug;
+		};
+		F8C6A9CE271F31D5002BB36A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Zhoor.com.ZHOOR-L10Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZHOOR L10.app/ZHOOR L10";
+			};
+			name = Release;
+		};
+		F8C6A9D0271F31D5002BB36A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Zhoor.com.ZHOOR-L10UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ZHOOR L10";
+			};
+			name = Debug;
+		};
+		F8C6A9D1271F31D5002BB36A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Zhoor.com.ZHOOR-L10UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ZHOOR L10";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8C6A99A271F31D3002BB36A /* Build configuration list for PBXProject "ZHOOR L10" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8C6A9C7271F31D5002BB36A /* Debug */,
+				F8C6A9C8271F31D5002BB36A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8C6A9C9271F31D5002BB36A /* Build configuration list for PBXNativeTarget "ZHOOR L10" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8C6A9CA271F31D5002BB36A /* Debug */,
+				F8C6A9CB271F31D5002BB36A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8C6A9CC271F31D5002BB36A /* Build configuration list for PBXNativeTarget "ZHOOR L10Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8C6A9CD271F31D5002BB36A /* Debug */,
+				F8C6A9CE271F31D5002BB36A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8C6A9CF271F31D5002BB36A /* Build configuration list for PBXNativeTarget "ZHOOR L10UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8C6A9D0271F31D5002BB36A /* Debug */,
+				F8C6A9D1271F31D5002BB36A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8C6A997271F31D3002BB36A /* Project object */;
+}
