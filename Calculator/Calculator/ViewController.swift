@@ -1,106 +1,82 @@
 import UIKit
 class ViewController: UIViewController {
-//VARIABLES
-    var firstNumber = ""
-    var secondNumber = ""
+        //=============\\
+          //VARIABLES\\
+    var firstNumber = 0
+    var secondNumber = 0
     var operation = ""
-    var haveResult = false
-    var resultNumber = ""
-    var numAfterResult = ""
+    var reseLable = true
     @IBOutlet weak var numberOnScreen: UILabel!
-//ACTIONS
-    override func viewDidLoad() {
-        super.viewDidLoad()
+           //\//|\\/\\
+         //===========\\
+           //NUMBERS\\
+    @IBAction func buttonAction(_ sender: UIButton) {
+        if (reseLable) {
+            numberOnScreen.text = ""
+        }
+        numberOnScreen.text = numberOnScreen.text! + "\(sender.tag)"
+        reseLable = false
     }
-//NUMBERS ACTION
-    @IBAction func numberPressed(_ sender: UIButton) {
-        if (operation == "") {
-            firstNumber += "\(sender.tag)"
-            numberOnScreen.text = firstNumber
-        }else if (operation != "" && !haveResult) {
-            secondNumber += "\(sender.tag)"
-            numberOnScreen.text = secondNumber
-        }else if (operation != "" && haveResult) {
-            numAfterResult = "\(sender.tag)"
-            numberOnScreen.text = numAfterResult
+               //\//|\\/\\
+            //=============\\
+          //OPERATORS and DOT\\
+    @IBAction func operatorsActions(_ sender: UIButton) {
+        switch sender.tag {
+        case 10: firstNumber = Int(numberOnScreen.text!)!
+            operation = "/"
+            reseLable = true
+        case 20: firstNumber = Int(numberOnScreen.text!)!
+            operation = "x"
+            reseLable = true
+        case 30: firstNumber = Int(numberOnScreen.text!)!
+            operation = "-"
+            reseLable = true
+        case 40: firstNumber = Int(numberOnScreen.text!)!
+            operation = "+"
+            reseLable = true
+        case 60: numberOnScreen.text = numberOnScreen.text! + "."
+            reseLable = false
+        default: numberOnScreen.text = "ERROR!"
         }
     }
-//CLEAR Action
-    @IBAction func clear(_ sender: Any) {
-        firstNumber = ""
-        secondNumber = ""
-        operation = ""
-        haveResult = false
-        resultNumber = ""
-        numAfterResult = ""
+    
+              //\/\\//||\\////\\
+            //==================\\
+               //Equal Action\\
+    @IBAction func equalAction(_ sender: Any) {
+        secondNumber = (Int(numberOnScreen.text!)!)
+        if operation == "/" {
+            numberOnScreen.text = "\(devideBy(number1: firstNumber, number2: secondNumber))"
+        }
+        if operation == "x" {
+            numberOnScreen.text = "\(multiplyBy(number1: firstNumber, number2: secondNumber))"
+        }
+        if operation == "-" {
+            numberOnScreen.text = "\(supstractBy(number1: firstNumber, number2: secondNumber))"
+        }
+        if operation == "+" {
+            numberOnScreen.text = "\(addBy(number1: firstNumber, number2: secondNumber))"
+        }
+    }
+    @IBAction func clearCommand(_ sender: Any) {
+        firstNumber = 0
+        secondNumber = 0
+        reseLable = true
         numberOnScreen.text = "0"
     }
-//ADD Action
-    @IBAction func add(_ sender: Any) {
-        operation = "+"
+            //\\//|\\//\\
+          //=============\\
+            //FUNCTIONS\\
+    func devideBy(number1: Int, number2: Int) -> Int {
+        return number1 / number2
     }
-//MINUS Action
-    @IBAction func subtract(_ sender: Any) {
-        operation = "-"
+    func multiplyBy(number1: Int, number2: Int) -> Int {
+        return number1 * number2
     }
-//MULTIPLY Action
-    @IBAction func multiply(_ sender: Any) {
-        operation = "x"
+    func supstractBy(number1: Int, number2: Int) -> Int {
+        return number1 - number2
     }
-//EVEN Action
-    @IBAction func even(_ sender: Any) {
-        operation = "/"
+    func addBy(number1: Int, number2: Int) -> Int {
+        return number1 + number2
     }
-//EQUAL Action
-    @IBAction func equal(_ sender: Any) {
-        if (operation != "" && !haveResult) {
-            resultNumber = "\(theCalculations())"
-            numberOnScreen.text = resultNumber
-        }
-        
-    }
-//DOT ACTION
-    @IBAction func dot(_ sender: Any) {
-        if (operation == "") {
-            firstNumber += "."
-            numberOnScreen.text = firstNumber
-        }else if (operation != "" && !haveResult) {
-            secondNumber += "."
-            numberOnScreen.text = secondNumber
-        }
-//Function Of Calculation
-    }
-func theCalculations() -> Double {
-    if (operation == "+") {
-        if (!haveResult) {
-        haveResult = true
-    return Double(firstNumber)! + Double(secondNumber)!
-           }else {
-            return Double(resultNumber)! + Double(numAfterResult)!
-           }
-    }else if (operation == "-") {
-        if (!haveResult) {
-        haveResult = true
-    return Double(firstNumber)! - Double(secondNumber)!
-           }else {
-            return Double(resultNumber)! - Double(numAfterResult)!
-           }
-    }else if (operation == "x") {
-        if (!haveResult) {
-        haveResult = true
-    return Double(firstNumber)! * Double(secondNumber)!
-           }else {
-            return Double(resultNumber)! * Double(numAfterResult)!
-           }
-    }else if (operation == "/"){
-        if (!haveResult) {
-        haveResult = true
-    return Double(firstNumber)! / Double(secondNumber)!
-           }else {
-            return Double(resultNumber)! / Double(numAfterResult)!
-           }
-    }
-    return 0
-   }
-
-}
+}//The END\\
