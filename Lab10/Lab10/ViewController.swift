@@ -30,9 +30,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var nineButton: UIButton!
     
     
-    var numberOnScreen: Double = 0
+    var numberOnScreen = 0
 
-    var previousNumber: Double = 0
+    var previousNumber = 0
 
     var performingMath = false
 
@@ -49,7 +49,7 @@ class ViewController: UIViewController {
 
             lable.text = String(sender.tag-1)
 
-        numberOnScreen = Double(lable.text!)!
+            numberOnScreen = Int(lable.text!)!
 
         performingMath = false
 
@@ -57,7 +57,7 @@ class ViewController: UIViewController {
 
         lable.text = lable.text! + String(sender.tag-1)
 
-        numberOnScreen = Double(lable.text!)!
+        numberOnScreen = Int(lable.text!)!
 
         }
 
@@ -66,7 +66,7 @@ class ViewController: UIViewController {
         
     @IBAction func operationsAction(_ sender: UIButton) {
         if lable.text != "" && sender.tag != 11 && sender.tag != 16 {
-        previousNumber = Double(lable.text!)!
+        previousNumber = Int(lable.text!)!
 
      /*   if sender.tag == 12 { //Divide
 
