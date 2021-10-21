@@ -9,123 +9,115 @@ import UIKit
 
 class ViewController: UIViewController {
   
-
-    @IBOutlet weak var viewResult: UILabel!
+    @IBOutlet weak var resultLabel: UILabel!
     
-    var varNumber1 = 0
-    var varNumber2 = 0
-    var varNumberResult = 0
-    
-    var varOperator = "+"
-        
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
     }
- 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    var startView = true
+    func viewResult(number:String){
+        var textNumber = String (resultLabel.text!)
+        if startView {
+            textNumber = ""
+            startView = false
+        }
+        textNumber = textNumber + number
+        resultLabel.text = textNumber
     }
+    
+    //numbers//
  
     @IBAction func button1(_ sender: UIButton) {
-        viewResult.text = viewResult.text! + "1"
-        
+        viewResult(number: "1")
     }
-    
     @IBAction func button2(_ sender: UIButton) {
-        viewResult.text = viewResult.text! + "2"
-        
+        viewResult(number: "2")
     }
-    
     @IBAction func button3(_ sender: UIButton) {
-        viewResult.text = viewResult.text! + "3"
+        viewResult(number: "3")
     }
-    
     @IBAction func button4(_ sender: UIButton) {
-        viewResult.text = viewResult.text! + "4"
+        viewResult(number: "4")
     }
-    
     @IBAction func button5(_ sender: UIButton) {
-        viewResult.text = viewResult.text! + "5"
-        
+        viewResult(number: "5")
     }
-    
     @IBAction func button6(_ sender: UIButton) {
-        viewResult.text = viewResult.text! + "6"
+        viewResult(number: "6")
     }
-    
     @IBAction func button7(_ sender: UIButton) {
-        viewResult.text = viewResult.text! + "7"
+        viewResult(number: "7")
     }
-
     @IBAction func button8(_ sender: UIButton) {
-        viewResult.text = viewResult.text! + "8"
+        viewResult(number: "8")
     }
     @IBAction func button9(_ sender: UIButton) {
-        viewResult.text = viewResult.text! + "9"
+        viewResult(number: "9")
+    }
+    @IBAction func button0(_ sender: UIButton) {
+        viewResult(number: "0")
+    }
+    @IBAction func decimal(_ sender: Any) {
+        viewResult(number: ".")
     }
     
-    @IBAction func button0(_ sender: UIButton) {
-        viewResult.text = viewResult.text! + "0"
-    }
+    //calculation//
+    
+    var Operator = "+"
+    var number1:Double?
   
     @IBAction func buttonPlus(_ sender: UIButton){
-        varOperator = "+"
-                varNumber1 = Int(viewResult.text!)!
-                clearText()
+         Operator = "+"
+        number1 = Double(resultLabel.text!)
+            startView = true
     }
     
     @IBAction func buttonMinus(_ sender: UIButton) {
-        varOperator = "-"
-                varNumber1 = Int(viewResult.text!)!
-                clearText()    }
-    
-    @IBAction func buttonMultiplication(_ sender: UIButton) {
-        varOperator = "*"
-               varNumber1 = Int(viewResult.text!)!
-               clearText()
+        Operator = "-"
+       number1 = Double(resultLabel.text!)
+           startView = true
+    }
+    @IBAction func buttondivid(_ sender: Any) {
+        Operator = "/"
+       number1 = Double(resultLabel.text!)
+           startView = true
     }
     
-    
-    @IBAction func buttonDivision(_ sender: UIButton) {
-        varOperator = "/"
-               varNumber1 = Int(viewResult.text!)!
-               clearText()
+    @IBAction func buttonmultipiy(_ sender: Any) {
+        Operator = "*"
+       number1 = Double(resultLabel.text!)
+           startView = true
     }
-    
-    @IBAction func buttonEqual(_ sender: UIButton) {
-        varNumber2 = Int(viewResult.text!)!
-    
-    
-    switch varOperator {
-        case "+":
-            varNumberResult = varNumber1+varNumber2
-        viewResult.text = String(varNumberResult)
-        case "-":
-            varNumberResult = varNumber1-varNumber2
-        viewResult.text = String(varNumberResult)
-        case "*":
-            varNumberResult = varNumber1*varNumber2
-        viewResult.text = String(varNumberResult)
-        case "/":
-            varNumberResult = varNumber1/varNumber2
-        viewResult.text = String(varNumberResult)
-        default:
-        viewResult.text = "ERROR"
-        }
-        
-    
-        }
-        
-    @IBAction func buttonClear(_ sender: UIButton) {
-        clearText()
-    }
-   
-   func clearText() {
-       viewResult.text = ""
-   
-   }
 
+    @IBAction func clear(_ sender: Any) {
+        Operator = "c"
+       number1 = Double(resultLabel.text!)
+           startView = true
+    }
+    
+    //result//
+    
+    @IBAction func equal(_ sender: Any) {
+let number2 = Double(resultLabel.text!)
+var result:Double?
+switch Operator {
+ case "+":
+     result = number1! + number2!
+ case "-":
+     result = number1! - number2!
+ case "*":
+     result = number1! * number2!
+ case "/":
+     result = number1! / number2!
+ default:
+     result = 0.0
+ }
+ 
+ resultLabel.text = String(result!)
+ startView = true
+    }
+    
 }
+
 
