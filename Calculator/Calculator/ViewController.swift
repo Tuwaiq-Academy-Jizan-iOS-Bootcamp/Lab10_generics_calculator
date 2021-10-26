@@ -1,82 +1,75 @@
 import UIKit
 class ViewController: UIViewController {
-        //=============\\
-          //VARIABLES\\
-    var firstNumber = 0
-    var secondNumber = 0
+    var firstNumber = 0.0
+    var secondNumber = 0.0
     var operation = ""
-    var reseLable = true
-    @IBOutlet weak var numberOnScreen: UILabel!
-           //\//|\\/\\
-         //===========\\
-           //NUMBERS\\
-    @IBAction func buttonAction(_ sender: UIButton) {
-        if (reseLable) {
-            numberOnScreen.text = ""
+    var haveResult = true
+    @IBOutlet weak var lable: UILabel!
+    @IBAction func numbersButton(_ sender: UIButton) {
+        if haveResult {
+            lable.text = ""
         }
-        numberOnScreen.text = numberOnScreen.text! + "\(sender.tag)"
-        reseLable = false
+        lable.text! = lable.text! + String(sender.tag)
+        haveResult = false
     }
-               //\//|\\/\\
-            //=============\\
-          //OPERATORS and DOT\\
-    @IBAction func operatorsActions(_ sender: UIButton) {
+    @IBAction func oberationAction(_ sender: UIButton) {
         switch sender.tag {
-        case 10: firstNumber = Int(numberOnScreen.text!)!
-            operation = "/"
-            reseLable = true
-        case 20: firstNumber = Int(numberOnScreen.text!)!
-            operation = "x"
-            reseLable = true
-        case 30: firstNumber = Int(numberOnScreen.text!)!
-            operation = "-"
-            reseLable = true
-        case 40: firstNumber = Int(numberOnScreen.text!)!
-            operation = "+"
-            reseLable = true
-        case 60: numberOnScreen.text = numberOnScreen.text! + "."
-            reseLable = false
-        default: numberOnScreen.text = "ERROR!"
+        case 10: operation = "/"
+            firstNumber = Double(lable.text!)!
+            haveResult = true
+        case 20: operation = "*"
+            firstNumber = Double(lable.text!)!
+            haveResult = true
+        case 30: operation = "-"
+            firstNumber = Double(lable.text!)!
+            haveResult = true
+        case 40: operation = "+"
+            firstNumber = Double(lable.text!)!
+            haveResult = true
+        case 60: lable.text = lable.text! + "."
+            haveResult = false
+        default: lable.text = "Error"
         }
     }
-    
-              //\/\\//||\\////\\
-            //==================\\
-               //Equal Action\\
-    @IBAction func equalAction(_ sender: Any) {
-        secondNumber = (Int(numberOnScreen.text!)!)
+    @IBAction func result(_ sender: UIButton) {
+        secondNumber = Double(lable.text!)!
         if operation == "/" {
-            numberOnScreen.text = "\(devideBy(number1: firstNumber, number2: secondNumber))"
+            lable.text = "\(divide(number1: firstNumber, number2: secondNumber))"
         }
         if operation == "x" {
-            numberOnScreen.text = "\(multiplyBy(number1: firstNumber, number2: secondNumber))"
+            lable.text = "\(plus(number1: firstNumber, number2: secondNumber))"
         }
         if operation == "-" {
-            numberOnScreen.text = "\(supstractBy(number1: firstNumber, number2: secondNumber))"
+            lable.text = "\(minus(number1: firstNumber, number2: secondNumber))"
         }
-        if operation == "+" {
-            numberOnScreen.text = "\(addBy(number1: firstNumber, number2: secondNumber))"
+        if operation == "*" {
+            lable.text = "\(multybly(number1: firstNumber, number2: secondNumber))"
         }
     }
-    @IBAction func clearCommand(_ sender: Any) {
+    @IBAction func clearButton(_ sender: UIButton) {
         firstNumber = 0
         secondNumber = 0
-        reseLable = true
-        numberOnScreen.text = "0"
+        operation = ""
+        haveResult = true
+        lable.text = "0"
     }
-            //\\//|\\//\\
-          //=============\\
-            //FUNCTIONS\\
-    func devideBy(number1: Int, number2: Int) -> Int {
+    func divide<T:BinaryFloatingPoint>(number1:T,number2:T) -> T {
         return number1 / number2
     }
-    func multiplyBy(number1: Int, number2: Int) -> Int {
-        return number1 * number2
-    }
-    func supstractBy(number1: Int, number2: Int) -> Int {
-        return number1 - number2
-    }
-    func addBy(number1: Int, number2: Int) -> Int {
+    func plus<T:Numeric>(number1:T,number2:T) -> T {
         return number1 + number2
     }
-}//The END\\
+    func minus<T:Numeric>(number1:T,number2:T) -> T {
+        return number1 - number2
+    }
+    func multybly<T:Numeric>(number1:T,number2:T) -> T {
+        return number1 * number2
+    }
+    
+
+    
+    
+    
+    
+    
+}
