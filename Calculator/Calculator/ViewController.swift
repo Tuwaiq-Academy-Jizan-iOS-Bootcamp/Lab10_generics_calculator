@@ -91,33 +91,43 @@ class ViewController: UIViewController {
     }
 
     @IBAction func clear(_ sender: Any) {
-        Operator = "c"
-       number1 = Double(resultLabel.text!)
-           startView = true
-    }
-    
+        resultLabel.text = "0"
+                 startView = true
+           }
     //result//
     
     @IBAction func equal(_ sender: Any) {
-let number2 = Double(resultLabel.text!)
-var result:Double?
-switch Operator {
- case "+":
-     result = number1! + number2!
- case "-":
-     result = number1! - number2!
- case "*":
-     result = number1! * number2!
- case "/":
-     result = number1! / number2!
- default:
-     result = 0.0
- }
- 
- resultLabel.text = String(result!)
- startView = true
-    }
-    
+        let number2 = Double(resultLabel.text!)
+                     var result:Double?
+                     switch Operator {
+                     case "*":
+                         result = number1! * number2!
+                     case "/":
+                         result = number1! / number2!
+                     case "-":
+                         result = number1! - number2!
+                     case "+":
+                         result = number1! + number2!
+                     default:
+                         result = 0.0
+                     }
+                     resultLabel.text = String(result!)
+                     startView = true
+
+                         }
+
+                     }
+// Methode for Operation
+
+func divideBy<N:FloatingPoint>(number1: N, number2: N) -> N {
+    return number1 / number2
+func multiplyBy<N:Numeric>(number1: N, number2: N) -> N {
+    return number1 * number2
 }
-
-
+func substractBy<N:Numeric>(number1: N, number2: N) -> N {
+    return number1 - number2
+}
+func addBy<N:Numeric>(number1: N, number2: N) -> N {
+    return number1 + number2
+}
+}

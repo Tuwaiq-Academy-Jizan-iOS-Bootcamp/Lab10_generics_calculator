@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mjk-QB-pPr">
-                                <rect key="frame" x="-27" y="60" width="454" height="818"/>
+                                <rect key="frame" x="-29" y="54" width="456" height="818"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JyQ-Sd-zqe">
                                         <rect key="frame" x="57" y="544" width="175" height="98"/>
@@ -270,7 +270,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3590" y="-1449"/>
+            <point key="canvasLocation" x="-3591.3043478260875" y="-1449.1071428571429"/>
         </scene>
     </scenes>
     <resources>
