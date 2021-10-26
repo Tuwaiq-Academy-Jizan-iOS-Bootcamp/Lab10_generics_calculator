@@ -183,14 +183,14 @@
                                     <action selector="number:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pAa-vC-Aqb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="20" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ws1-MD-DbI">
+                            <button opaque="NO" tag="20" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" toolTip="." lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ws1-MD-DbI">
                                 <rect key="frame" x="212" y="784" width="82" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" cornerStyle="capsule">
                                     <backgroundConfiguration key="background"/>
                                     <attributedString key="attributedTitle">
-                                        <fragment content=",">
+                                        <fragment content=".">
                                             <attributes>
                                                 <font key="NSFont" size="30" name="Helvetica"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -200,6 +200,9 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="coma:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pjy-W4-4ri"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1Q-FI-75o">
                                 <rect key="frame" x="111" y="479" width="82" height="83"/>
