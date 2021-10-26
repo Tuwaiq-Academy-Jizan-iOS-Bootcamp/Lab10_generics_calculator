@@ -16,6 +16,7 @@
 		FE50C542271FED0B0023D302 /* LAB10dTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE50C541271FED0B0023D302 /* LAB10dTests.swift */; };
 		FE50C54C271FED0B0023D302 /* LAB10dUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE50C54B271FED0B0023D302 /* LAB10dUITests.swift */; };
 		FE50C54E271FED0B0023D302 /* LAB10dUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE50C54D271FED0B0023D302 /* LAB10dUITestsLaunchTests.swift */; };
+		FE73A1602727F67800E82AD6 /* ggggg.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE73A15F2727F67800E82AD6 /* ggggg.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		FE50C547271FED0B0023D302 /* LAB10dUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LAB10dUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE50C54B271FED0B0023D302 /* LAB10dUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LAB10dUITests.swift; sourceTree = "<group>"; };
 		FE50C54D271FED0B0023D302 /* LAB10dUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LAB10dUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FE73A15F2727F67800E82AD6 /* ggggg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ggggg.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				FE50C533271FED0B0023D302 /* Assets.xcassets */,
 				FE50C535271FED0B0023D302 /* LaunchScreen.storyboard */,
 				FE50C538271FED0B0023D302 /* Info.plist */,
+				FE73A15F2727F67800E82AD6 /* ggggg.swift */,
 			);
 			path = LAB10d;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE50C52F271FED0A0023D302 /* ViewController.swift in Sources */,
+				FE73A1602727F67800E82AD6 /* ggggg.swift in Sources */,
 				FE50C52B271FED0A0023D302 /* AppDelegate.swift in Sources */,
 				FE50C52D271FED0A0023D302 /* SceneDelegate.swift in Sources */,
 			);
