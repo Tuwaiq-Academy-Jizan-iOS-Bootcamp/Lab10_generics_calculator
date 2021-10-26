@@ -11,8 +11,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var screenLabel: UILabel!
        // Variables I need for the logic
-       var firstNumber = 0
-       var secondNumber = 0
+    var firstNumber = 0.0
+    var secondNumber = 0.0
        var mathOperation = ""
        var resetLabel = true
        
@@ -35,19 +35,19 @@ class ViewController: UIViewController {
            
            switch sender.tag {
            case 20:
-               firstNumber = Int(screenLabel.text!)!
+               firstNumber = Double(screenLabel.text!)!
                mathOperation = "/"
                resetLabel = true
            case 21:
-               firstNumber = Int(screenLabel.text!)!
+               firstNumber = Double(screenLabel.text!)!
                mathOperation = "*"
                resetLabel = true
            case 22:
-               firstNumber = Int(screenLabel.text!)!
+               firstNumber = Double(screenLabel.text!)!
                mathOperation = "-"
                resetLabel = true
           case 23:
-               firstNumber = Int(screenLabel.text!)!
+               firstNumber = Double(screenLabel.text!)!
                mathOperation = "+"
                resetLabel = true
            default:
@@ -58,7 +58,7 @@ class ViewController: UIViewController {
        }
        @IBAction func result(_ sender: Any) {
            
-           secondNumber = Int(screenLabel.text!)!
+           secondNumber = Double(screenLabel.text!)!
            
            if mathOperation == "/"{
                screenLabel.text = String(divideBy(number1: firstNumber, number2: secondNumber))
@@ -76,22 +76,22 @@ class ViewController: UIViewController {
        }
        @IBAction func clearAll(_ sender: Any) {
            screenLabel.text = "0"
-           firstNumber = 0
-           secondNumber = 0
+           firstNumber = 0.0
+           secondNumber = 0.0
            resetLabel = true
        }
        
        // Methode for Operation
-       func divideBy(number1: Int, number2: Int) -> Int {
+    func divideBy<T:BinaryFloatingPoint>(number1: T, number2: T) -> T {
            return number1 / number2
        }
-       func multiplyBy(number1: Int, number2: Int) -> Int {
+    func multiplyBy<T:Numeric>(number1: T, number2: T) -> T {
            return number1 * number2
        }
-       func substractBy(number1: Int, number2: Int) -> Int {
+    func substractBy<T:Numeric>(number1: T, number2: T) -> T {
            return number1 - number2
        }
-       func addBy(number1: Int, number2: Int) -> Int {
+    func addBy<T:Numeric>(number1: T, number2: T) -> T {
            return number1 + number2
        }
    }
